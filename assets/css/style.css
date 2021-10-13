@@ -297,7 +297,7 @@ html {
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #000;
   }
 
   *::-webkit-scrollbar-thumb {
