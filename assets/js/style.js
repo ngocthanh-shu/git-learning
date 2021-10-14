@@ -12,13 +12,13 @@ function hideBuyTicket() {
     modal.classList.remove('open')
 }
 
-for(const buyBtn of buyBtns) {
-    buyBtn.addEventListener('click',showBuyTicket)
+for (const buyBtn of buyBtns) {
+    buyBtn.addEventListener('click', showBuyTicket)
 }
 
-modalClose.addEventListener('click',hideBuyTicket)
-modal.addEventListener('click',hideBuyTicket)
+modalClose.addEventListener('click', hideBuyTicket)
+modal.addEventListener('click', hideBuyTicket)
 
-modalContainer.addEventListener('click',function(event) {
+modalContainer.addEventListener('click', function (event) {
     event.stopPropagation()
 })

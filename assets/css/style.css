@@ -30,6 +30,67 @@ html {
     color: #fff !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none; 
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
 #main {
 
 }
@@ -156,7 +217,7 @@ html {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0px;    
+    padding: 64px 0px 112px;    
 }
 
 #content .section-heading {
@@ -196,12 +257,6 @@ html {
     /* overflow: hidden; */
 }
 
-#content .member-item {
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
-}
-
 .tour-section {
     background-color: black;
 }
@@ -238,13 +293,9 @@ html {
 }
 
 .place-list {
-    margin: 32px -8px;
+    margin-top: 32px;
 }
-.place-item {
-    float: left;
-    width: calc(100% / 3);
-    padding: 0px 8px;
-}
+
 .place-img {
     width: 100%;
     display: block;
@@ -271,49 +322,69 @@ html {
     margin-top: 15px;
     line-height: 1.6;
 }
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
+
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info p i[class*="ti-"] {
+    width: 30px;
     display: inline-block;
-    margin-top: 15px;
-    border: none;
-    cursor: pointer;
 }
 
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
+.contact-form {
+    
 }
 
+.contact-form .form-control {
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
 
-/* Scroll */
-* {
-    scrollbar-width: auto;
-    scrollbar-color: #7b727e #ffffff;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #000;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #7b727e;
-    border-radius: 15px;
-    border: 0px solid #ffffff;
-  }
-/* End Scroll */
+/* Map */
+.map-section img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+/* End Map */
 
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
 
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    color: rgba(0,0,0,0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);
+}
+
+#footer .copyright a {
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+}
+
+/* Begin Modal */
 .modal {
     position: fixed;
     top: 0;
@@ -422,3 +493,26 @@ html {
         transform: translateY(0);
     }
 }
+/* End Modal */
+
+/* Scroll */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #7b727e #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #7b727e;
+    border-radius: 15px;
+    border: 0px solid #ffffff;
+  }
+/* End Scroll */
