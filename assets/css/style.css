@@ -278,12 +278,15 @@ html {
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    border: none;
+    cursor: pointer;
 }
 
 .place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
 }
+
 
 /* Scroll */
 * {
@@ -321,7 +324,10 @@ html {
     align-items: center;
     justify-content: center;
     display: none;
-    
+}
+
+.open {
+    display: flex;
 }
 
 .modal .modal-container {
@@ -331,6 +337,7 @@ html {
     min-height: 200px;
     position: relative;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    animation: modalFadeIn ease .4s;
 }
 
 .modal-header {
@@ -403,4 +410,15 @@ html {
 
 .modal-footer .modal-help .help {
     color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0.8;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
