@@ -79,6 +79,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32{
+    margin-top: 32px !important;
+}
+
 .pull-right {
     float: right !important;
 }
@@ -111,7 +115,6 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 /* Begin Navigation */
@@ -177,11 +180,17 @@ html {
 /* End Navigation */
 
 /* Begin Header */
+#header .mobile-menu-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
-    
 }
 
 #header .search-btn:hover {
@@ -281,7 +290,7 @@ html {
 }
 
 #content .member-list {
-    margin: 32px 0px;
+    margin-top: 48px;
     /* overflow: hidden; */
 }
 
